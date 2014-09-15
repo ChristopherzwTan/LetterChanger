@@ -5,62 +5,62 @@ from sys import argv
 script, filename = argv
 
 cipherText = open(filename, 'r')
-decipher = open("decipher.txt", 'w')
+decipher = open("2decipher.txt", 'w')
 
 for line in cipherText:
    for letter in line:
       if letter == "A":
-         decipher.write("X")
+         decipher.write("K")
       elif letter == "B":
-         decipher.write("W")
+         decipher.write("G")
       elif letter == "C":
-         decipher.write("T")
-      elif letter == "D":
-         decipher.write("C")
-      elif letter == "E":
-         decipher.write("Q")
-      elif letter == "F":
          decipher.write("O")
+      elif letter == "D":
+         decipher.write("D")
+      elif letter == "E":
+         decipher.write(" ")
+      elif letter == "F":
+         decipher.write("I")
       elif letter == "G":
-         decipher.write("P")
+         decipher.write("W")
       elif letter == "H":
-         decipher.write("N")
+         decipher.write("T")
       elif letter == "I":
          decipher.write("F")
       elif letter == "J":
-         decipher.write("V")
+         decipher.write("Y")
       elif letter == "K":
-         decipher.write("J")
+         decipher.write("X")
       elif letter == "L":
-         decipher.write("G")
+         decipher.write("V")
       elif letter == "M":
-         decipher.write("B")
+         decipher.write("Z")
       elif letter == "N":
-         decipher.write("M")
+         decipher.write("P")
       elif letter == "O":
-         decipher.write("S")
+         decipher.write("R")
       elif letter == "P":
-         decipher.write("H")
+         decipher.write("N")
       elif letter == "Q":
          decipher.write("U")
       elif letter == "R":
-         decipher.write("Y")
-      elif letter == "X":
+         decipher.write("L")
+      elif letter == "S":
          decipher.write("A")
       elif letter == "T":
-         decipher.write("D")
+         decipher.write("C")
       elif letter == "U":
-         decipher.write("I")
+         decipher.write("S")
       elif letter == "V":
          decipher.write("E")
       elif letter == "W":
-         decipher.write("L")
+         decipher.write("M")
       elif letter == "X":
-         decipher.write("K")
+         decipher.write("B")
       elif letter == "Y":
-         decipher.write("Z")
+         decipher.write(" ")
       elif letter == "Z":
-         decipher.write("R")
+         decipher.write("H")
       elif letter == " ":
          decipher.write(" ")
 decipher.write("\n")
