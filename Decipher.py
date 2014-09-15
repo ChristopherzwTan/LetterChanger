@@ -62,7 +62,7 @@ for line in cipherText:
       elif letter == "Z":
          decipher.write("R")
       elif letter == " ":
-         decipher.write( ")
+         decipher.write(" ")
 decipher.write("\n")
 
 
